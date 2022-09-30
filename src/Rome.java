@@ -9,7 +9,7 @@ public enum Rome {
     XX(20), XXX(30), XL(40), L(50),LX(60), LXX(70),
     LXXX(80), XC(90), C(100);
 
-    int conv;
+    int conv;   // fucking name and variable should be private
     Rome(int conv){
         this.conv = conv;
     }
@@ -18,7 +18,7 @@ public enum Rome {
         return conv;
     }
 
-    public static String getValue(int ararb){
+    public static String getValue(int ararb){ //ararb is fucking name also
         for (Rome r: values()){
             if(r.getConv() == ararb){
                 return r.name();
@@ -51,5 +51,5 @@ public enum Rome {
         }
         return -1;
     }
-
+// remove this space
 }
